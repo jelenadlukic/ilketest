@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>One dot - smart business support</title>
+    <link rel="icon" href="./assets/titlelogo.png" type="image/png">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#0b1d3a; z-index: 100;">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img id="logo" src="./assets/logowhite.png" alt="Logo" >
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="hero-section">
+      
+        <div class="hero-video">
+          <video class="hero-video-el" id="heroVideo" autoplay muted loop playsinline preload="auto">
+            <source src="./assets/zemlja.mp4" type="video/mp4">
+            
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="hero-video-overlay"></div>
+        </div>
+     
+      <div class="hero-text">
+        <h1>Smart Business Support for Global Companies.</h1>
+      </div>
+       <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#ffffff" fill-opacity="1" 
+                d="M0,224L48,208C96,192,192,160,288,138.7C384,117,480,107,576,117.3C672,128,768,160,864,176C960,192,1056,192,1152,170.7C1248,149,1344,107,1392,85.3L1440,64V320H0Z">
+          </path>
+        </svg>
+    </section>
+    <section id="about" class="about-section">
+      <div class="container py-5">
+        <h2 class="mb-4">About us</h2>
+        
+
+        <p>
+          One Dot offers a comprehensive one-stop shop solution for foreign entities seeking to outsource their operations in Serbia. 
+          We enable our clients to focus entirely on the core, revenue-generating aspects of their business, while we manage the full 
+          spectrum of back-office functions, tailored to the needs of each client.
+        </p>
+        <p>
+          Our team and trusted partners provide expertise in incorporation, accounting, HR, recruitment, legal compliance, 
+          and work permits. By combining local know-how with international standards, we ensure that every company operates 
+          smoothly, legally, and efficiently in the Serbian market.
+        </p>
+        <p>
+          Whether you are opening a new subsidiary, hiring your first employees, or simply seeking reliable back-office support, 
+          One Dot is here to simplify the process. We are committed to building long-term partnerships, offering transparent 
+          pricing, and helping global businesses succeed in Serbia.
+        </p>
+      </div>
+    </section>
+    <!-- Statistika blok -->
+    <section class="stats-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h3 class="counter" data-target="63">0</h3>
+            <p>Completed Projects</p>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h3 class="counter" data-target="25">0</h3>
+            <p>Team Members</p>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h3 class="counter" data-target="8">0</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h3 class="counter" data-target="2">0</h3>
+            <p>Regional Offices</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="transition" class="transition-section position-relative">
+      <canvas id="particles"></canvas>
+    </section>
+   
+    <section id="services" class="services-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="mb-3">Our Services</h2>
+      <p class="text-muted">We provide or coordinate the provision of the following services:</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-building service-icon"></i>
+          <h5 class="mt-3">Incorporation</h5>
+          <p class="text-muted">Assistance with setting up and registering your business entity in Serbia.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-calculator service-icon"></i>
+          <h5 class="mt-3">Accounting</h5>
+          <p class="text-muted">All accounting tasks delivered by licensed professionals.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-geo-alt service-icon"></i>
+          <h5 class="mt-3">Virtual Office</h5>
+          <p class="text-muted">Provision of virtual office or assistance with finding physical office space.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-people service-icon"></i>
+          <h5 class="mt-3">Recruitment</h5>
+          <p class="text-muted">Hiring and onboarding the best talent tailored to your business needs.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-person-badge service-icon"></i>
+          <h5 class="mt-3">Human Resources</h5>
+          <p class="text-muted">Full HR support for smooth employee management and compliance.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-passport service-icon"></i>
+          <h5 class="mt-3">Residence & Work Permits</h5>
+          <p class="text-muted">Handling all legal processes for residence and work permits in Serbia.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-briefcase service-icon"></i>
+          <h5 class="mt-3">Employer of Record</h5>
+          <p class="text-muted">Acting as your official employer to simplify operations and compliance.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-person-workspace service-icon"></i>
+          <h5 class="mt-3">Directorship</h5>
+          <p class="text-muted">Providing trusted directorship and management support.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-file-earmark-text service-icon"></i>
+          <h5 class="mt-3">Legal</h5>
+          <p class="text-muted">Legal services delivered by fully licensed professionals.</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="service-box text-center p-4 h-100">
+          <i class="bi bi-plus-circle service-icon"></i>
+          <h5 class="mt-3">Additional Services</h5>
+          <p class="text-muted">Any additional services may be provided upon request.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-muted mt-4 small text-center">
+      *Services that require licensing, such as accounting or legal, are delivered by fully licensed professionals with whom we partner.
+    </p>
+  </div>
+</section>
+<section id="contact" class="contact-section position-relative text-light">
+  <!-- BELO: wave na vrhu, OKRENUT NA DRUGU STRANU -->
+  <svg class="contact-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#ffffff" fill-opacity="1"
+          d="M0,224L48,208C96,192,192,160,288,138.7C384,117,480,107,576,117.3C672,128,768,160,864,176C960,192,1056,192,1152,170.7C1248,149,1344,107,1392,85.3L1440,64V320H0Z">
+    </path>
+  </svg>
+
+  <div class="container position-relative">
+    <div class="row g-5 align-items-start">
+      <!-- Levo: info + mreže -->
+      <div class="col-12 col-lg-5">
+        <h2 class="mb-3">Contact</h2>
+        <p class="text-secondary mb-4">Tell us about your plans in Serbia. We’ll come back with a simple roadmap and next steps.</p>
+
+        <div class="d-flex flex-column gap-2 mb-4 contact-info">
+          <div><i class="bi bi-envelope-open me-2"></i><a class="link-light text-decoration-none" href="mailto:hello@onedot.rs">hello@onedot.rs</a></div>
+          <div><i class="bi bi-geo-alt me-2"></i>Belgrade, Serbia</div>
+        </div>
+
+        <div class="socials d-flex gap-3">
+          <a class="social" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a class="social" href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a class="social" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="social" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Desno: forma -->
+      <div class="col-12 col-lg-7">
+        <form class="row g-3 contact-form" action="#" method="post" novalidate>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" name="name" type="text" class="form-control form-control-lg" placeholder="Your name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-control form-control-lg" placeholder="you@company.com" required>
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-control form-control-lg" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <div class="col-12 d-grid d-sm-flex gap-3">
+            <div class="col-12 text-end">
+              <button type="submit" class="btn btn-send px-5 py-3">Send</button>
+            </div>
+                
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row align-items-center gy-3">
+      
+      <!-- Leva strana: logo + copyright -->
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <a href="#home" class="footer-logo d-inline-flex align-items-center mb-2 mb-md-0">
+          <img src="./assets/logowhite.png" alt="One Dot Logo" height="32" class="me-2">
+
+        </a>
+        <p class="mb-0 small text-secondary">© 2025 One Dot. All rights reserved.</p>
+      </div>
+
+      <!-- Desna strana: linkovi + mreže -->
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <div class="socials d-flex justify-content-center justify-content-md-end gap-3">
+          <a class="social" href="#"><i class="bi bi-linkedin"></i></a>
+          <a class="social" href="#"><i class="bi bi-twitter-x"></i></a>
+          <a class="social" href="#"><i class="bi bi-instagram"></i></a>
+          <a class="social" href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script src="./js/particles.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+      const v = document.getElementById('heroVideo');
+      v.playbackRate = 0.9; 
+    </script>
+
+
+
+  </body>
+</html>
